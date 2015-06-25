@@ -1,0 +1,664 @@
+/*===================
+    GENERAL LAYOUT
+=====================*/
+header#header .sticky_header {
+    z-index: 9999;
+}
+
+.lexicon {
+    padding-top: 20px;
+}
+
+.lexicon h1 small {
+    font-family: Montserrat;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #bbab9e;
+    margin-left: 1em;
+}
+.lexicon #home h3 {
+    font-size: 18px;
+    margin-bottom: 0.4em;
+}
+.lexicon #home h3+p  {
+    margin-bottom: 0.4em;
+}
+.lexicon .span4 {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding-right: 1em;
+}
+.articles li {
+    margin-bottom: 1.5em;
+}
+.articles li p {
+    font-size: 16px;
+}
+.articles p {
+    padding-bottom: 5px;
+}
+.detour-24 {
+    border-top: 1px #ddccbb solid;
+    padding-top: 20px;
+}
+.detour-24 h3 {
+    line-height: 1.1em;
+}
+.btn-goto {
+    font-family: Montserrat;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 9px;
+}
+
+/* FOOTER */
+#footer {
+    margin-top: 30px;
+}
+
+
+/*===================
+    MAPBOX
+=====================*/
+/* Height */
+.mapbox {
+    margin-top: 50px;
+    height: 650px;
+    width: 66.7%;
+    float: right;
+}
+
+@media (max-width: 767px) {
+    .mapbox {
+        float: none;
+        width: 100%;
+        height: 50vh;
+    }
+    header#header .identita img {
+        height: 50px;
+        width: auto;
+    }
+    .lexicon {
+      padding-top: 0;
+    }
+}
+
+.mapbox-logo-true,
+.leaflet-control-attribution {
+    display: none;
+}
+
+.leaflet-container {
+    background: #F7EBDF !important;
+}
+
+
+/*===================
+    QDV > Stats
+=====================*/
+.digitelematica {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-right: 0 !important;
+    background-color: #F7EBDF;
+    font-family: "Montserrat",Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+.digitelematica #chart {
+     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    
+	margin: 0;
+    padding: 10px 15px;
+	width:100%;
+	height:auto;
+	font:inherit;
+}
+.digitelematica .barItem {
+    padding: 0;
+    border: 0px;
+    width: 100%;
+    height: 41px;
+    background-color: transparent;
+}
+
+.digitelematica .barItem .barItemLabel {
+    width: 100%;
+    height: auto;
+    top:-19px;
+}
+.digitelematica .barItemLabel .barItemName{
+	font-size: 12px;
+    text-transform: uppercase;
+}
+.barItemLabel .barItemValue {
+	top: 21px;
+	font-size: 14px;
+}
+
+/* CHARTS: Bars */
+.digitelematica .barItem .barBase {
+	top:25px;
+	height: 10px;
+	width: 100%;
+}
+.digitelematica .barItem .barBase .bar {
+	top:2px;
+	float: left;
+	height: 6px;
+}
+.digitelematica .barItem .line{
+	top: -2px;
+	height: 14px;
+	left: 50%;
+    overflow: hidden;
+}
+.digitelematica .barItemLabel .barItemExpLight{
+	top: 62px;
+     display: none;
+}
+.digitelematica .barItemLabel .barItemItalyValue {
+    right: 41%;
+    top: 60px;
+     display: none;
+}
+.lexicon footer span{
+    font-size: 12px;
+    color: #b9ab9d;
+     display: none;
+}
+
+#wealth_bar {
+      width: 90% !important;
+}
+#unemployment_bar {
+      width: 20% !important;
+}
+#consumptions_bar {
+      width: 70% !important;
+}
+#judicial_system_bar {
+      width: 65% !important;
+}
+#exports_bar {
+      width: 75% !important;
+}
+#ict_diffusion_bar {
+      width: 65% !important;
+}
+#bank_deposits_bar {
+      width: 98% !important;
+}
+#youth_bar {
+      width: 67% !important;
+}
+#entrepreneurship_bar {
+      width: 84% !important;
+}
+#education_bar {
+      width: 80% !important;
+}
+.digitelematica .avg-text {
+    text-align: center;
+    font-family: Montserrat, Helvetica, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.map-overlay-qdv .digitelematica #chart,
+.map-overlay .digitelematica #chart  {
+    padding: 0;
+    padding-top: 10px;
+}
+.map-overlay-qdv .digitelematica #chart h2,
+.map-overlay .digitelematica #chart h2 {
+    color: #1a171b;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.qdv2014__explanation {
+    border-top: 1px solid #ddccbb;
+    padding: 20px 0 15px;
+}
+.qdv2014__explanation h3 {
+    font-style: italic;
+}
+.qdv2014__explanation p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.lexicontable_city .label {
+    width: 30%;
+}
+.lexicontable_city td+td {
+    font-family: "sole_headline", Georgia, Times, "Times New Roman", serif; 
+    font-size:24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/*===================
+    QDV > Stats
+    
+    DESKTOP
+=====================*/
+@media (min-width: 980px) {
+    .digitelematica {
+         border-top: none;
+    }
+    .map-overlay-qdv .digitelematica #chart h2,
+    .map-overlay .digitelematica #chart h2 {
+        font-size: 14px;
+    }
+    .digitelematica .barItem {
+        height: 22px !important;
+    }
+    .digitelematica .barItemLabel .barItemName{
+        float: left;
+    }
+    .barItemLabel .barItemValue {
+        float: right;
+        top: 17px;
+        font-size: 12px;
+    }
+    .digitelematica .barItemLabel .barItemName{
+        font-size: 10px;
+    }
+    /* CHARTS: Bars */
+    .digitelematica .barItem .barBase {
+        top: 3px;
+        left: 100px;
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 979px) and (min-width: 645px) {
+    .digitelematica .barItem {
+        height: 64px;
+    }
+    .digitelematica .barItem .barBase {
+        top:5px;
+        left: 20%;
+        height: 10px;
+        width: 70%;
+    }
+    .digitelematica .barItem .barBase .bar {
+        top:2px;
+        float: left;
+        height: 6px;
+    }
+    .digitelematica .barItem .line{
+        top: -2px;
+        height: 14px;
+        left: 50%;
+        overflow: hidden;
+    }
+
+    .digitelematica .barItemLabel .barItemItalyValue {
+        left: 42%;
+        right: 30%;
+        text-align: center;
+        top: 45px;
+        font-size: 11px;
+        display: block;
+    }
+    .digitelematica .barItemLabel .barItemExpLight{
+        left: 42%;
+        right: 30%;
+        text-align: center;
+        top: 63px;
+        display: block;
+        font-weight: normal;
+    }
+}
+
+@media (max-width: 644px) {
+    .digitelematica .barItemLabel .barItemExp{
+        display: none;
+
+}
+    .digitelematica .barItemLabel .barItemExpLight{
+        display: none;
+    }
+    .digitelematica .barItemLabel .barItemItalyValue {
+        display: none;
+    }
+    .lexicon footer span{
+        display: none;
+    }
+}
+
+/*===================
+    OVERLAY WHERE
+=====================*/
+
+.where {
+    position: relative;
+    overflow: hidden;
+}
+.map-overlay {
+    position: absolute;
+    float: left;
+    height: 700px;
+    width: 33.333%;
+    z-index: 1;
+    background: #F7EBDF;
+    padding: 15px 20px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.map-overlay-qdv {
+    position: absolute;
+    left: 33.333%;
+    border-left: 1px #ddccbb solid;
+    height: 650px;
+    top: 50px;
+    width: 33.333%;
+    z-index: 1;
+    background: #F7EBDF;
+    padding: 0px 20px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: none;
+}
+
+.map-overlay-scroll {
+    display: none;
+}
+
+.map-overlay-controls {
+    position: absolute;
+    height: 50px;
+    width: 67%;
+    z-index: 10;
+    right: -1px;
+    background: #F7EBDF;
+    padding: 10px 20px 10px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+@media (max-width: 480px) {
+    .digitelematica #chart .barItem, .digitelematica #chart .barItem .barItemLabel, .digitelematica #chart .barItem .barBase     {
+      width: 100%;
+    }
+    .digitelematica #chart .barItem .line {
+      left: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .map-overlay {
+        position: static;
+        display: block;
+        width: 100%;
+        left: 0;
+        height: auto;
+        clear: both;
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+    .map-overlay-qdv {
+        padding-top: 0 !important;
+    }
+    .map-overlay-scroll {
+        display: none !important;
+    }
+    .map-overlay-controls {
+        width: 100%;
+        height: 55px;
+    }
+    .search-ui {
+        display: none;
+    }
+    .menu-ui {
+          max-width: 100% !important;
+    }
+    .qdv2014__explanation,
+    .lexicontable_city {
+        float: none !important;
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 979px) {
+    .map-overlay-qdv {
+        position: static;
+        display: block;
+        width: 100%;
+        left: 0;
+        height: auto;
+        clear: both;
+        padding-top: 30px;
+        border: none;
+    }
+    .digitelematica {
+        border-top: 1px #ddccbb solid !important;
+        padding-top: 10px;
+    }
+    .map-overlay-scroll {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        display: table;
+        z-index: 2;
+        background: -moz-linear-gradient(top,  rgba(247,235,223,0) 0%, rgba(247,235,223,1) 75%, rgba(247,235,223,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,235,223,0)), color-stop(75%,rgba(247,235,223,1)), color-stop(100%,rgba(247,235,223,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(247,235,223,0) 0%,rgba(247,235,223,1) 75%,rgba(247,235,223,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(247,235,223,0) 0%,rgba(247,235,223,1) 75%,rgba(247,235,223,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(247,235,223,0) 0%,rgba(247,235,223,1) 75%,rgba(247,235,223,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(247,235,223,0) 0%,rgba(247,235,223,1) 75%,rgba(247,235,223,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f7ebdf', endColorstr='#f7ebdf',GradientType=0 ); /* IE6-9 */
+    }
+    .map-overlay-scroll .icon-caret-down {
+        display: table-cell;
+        vertical-align: bottom;
+        font-size: 50px;
+        color: #c4b6a8;
+    }
+    .menu-ui {
+          margin-left: 10px !important;
+    }
+    
+    .qdv2014__explanation,
+    .lexicontable_city {
+        float: left;
+        width: 47.5%;
+    }
+    .qdv2014__explanation {
+        margin-right: 5%;
+    }
+}
+
+/*===================
+    CONTROLS
+=====================*/
+
+.leaflet-top.leaflet-left {
+    top:50px;
+    left: 94%;
+}
+
+.search-ui {
+    position:absolute;
+    top:10px;
+    right:3%;
+    width: 200px;
+    z-index:1000;
+    line-height: 24px;
+    padding-left: 5px;
+    font-family: Montserrat, sans-serif;
+}
+
+
+/*===================
+    MAP CONTROLS: QdV
+=====================*/
+
+.menu-ui {
+    margin-left: 21px;
+    background: #D9C8B8;
+	min-width: 150px;
+	max-width: 250px;
+	padding: 7px 10px 7px 0;
+	border: none;
+    border-radius: 6px;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .menu-ui a {
+    float: right;
+    font-size:13px;
+    color:white;
+    background: #cb5b68;
+    padding: 1px 20px;
+    text-decoration:none;
+    text-align:center;
+    border: 1px white solid;
+    border-radius: 6px;
+    margin-top: -2px;
+    }
+    .menu-ui a:hover {
+        background: #a72b3a;
+    }
+    .menu-ui a:focus {
+	    outline: none;
+    }
+    .menu-ui a.active {
+        background:#41a550;
+        color:#FFF;
+      }
+      .menu-ui a.active:hover {
+        background:#1a7728;
+        }
+.menu-ui__title {
+    float: left;
+    color: white;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/*===================
+    MAP POPUP
+=====================*/
+
+.leaflet-popup-close-button {
+  display: none !important;
+  }
+.leaflet-popup-content-wrapper {
+  pointer-events: none !important;
+}
+.leaflet-popup--open {
+    
+}
+
+/*
+* These CSS rules affect the tooltips within maps with the custom-popup
+* class. See the full CSS for all customizable options:
+* https://github.com/mapbox/mapbox.js/blob/001754177f3985c0e6b4a26e3c869b0c66162c99/theme/style.css#L321-L366
+*/
+.qdv-popup .leaflet-popup-content-wrapper {
+    background: white;
+    background: rgba(255, 255, 255, 0.9);
+    color:#191919;
+    text-transform: capitalize !important;
+    color:rgba(25,25,25,0.9);
+    font-size:16px;
+    line-height:21px;
+    font-weight: normal;
+    font-family: Montserrat, Arial, sans-serif;
+}
+.qdv-popup .leaflet-popup-content-wrapper a {
+    color:rgba(25,25,25,0.8);
+}
+.qdv-popup .leaflet-popup-content-wrapper .marker-title {
+    font-family: "sole_headline", Georgia, Times, "Times New Roman", serif; 
+    font-size:24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.qdv-popup .leaflet-popup-tip-container {
+    width:30px;
+    height:15px;
+}
+.qdv-popup .leaflet-popup-tip {
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    border-top:15px solid white;
+    border-top:15px solid rgba(255, 255, 255, 0.9);
+}
+
+
+
+/*===================
+    MAP LEGEND
+=====================*/
+.qdv-popup .map-legend {
+    background: rgba(255, 255, 255, 0.95);
+    
+}
+.map-legend {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+}
+.map-legends .map-legend {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+.map-legend .swatch {
+    list-style: none;
+    width:20px;
+    height:20px;
+    float:left;
+    margin-right:10px;
+    margin-left: 2px;
+}
+span.map-legend__title {
+    display: block;
+    font-weight: bold !important;
+    line-height: 12px;
+    margin-bottom: 8px;
+}
+
+
+
+/*===================
+    RISULTATI
+=====================*/
+#content #ricerca #infinite-list,
+#content #preferiti #infinite-list,
+#content #news #infinite-list {
+    border-top: 10px solid #ddccbb;
+    position: relative;
+}

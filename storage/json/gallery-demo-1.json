@@ -1,0 +1,67 @@
+{
+    "deepurl": "",
+    "tipo": "galleryBig",
+    "sezione": "Inside Italy",
+    "sottosezione": "",
+    "title": "Italian  gardens",
+    "cover": "http://foto.dev.24orepro.in.ilsole24ore.ithttp://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/villaDurazzoPallavicini_700-525.jpg",
+    "thumb": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/villaDurazzoPallavicini_80-60.jpg",
+    "dataupdate": "2014-03-10 09:53:29",
+    "images": [
+        {
+            "index": 0,
+            "title": "Bardini Garden",
+            "caption": "",
+            "src": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/GiardinoBardini_1200-900.jpg",
+            "thumb": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/GiardinoBardini_80-60.jpg",
+            "medium": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/GiardinoBardini_160-120.jpg",
+            "big": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/GiardinoBardini_700-525.jpg",
+            "width": 1200,
+            "height": 798
+        },
+        {
+            "index": 1,
+            "title": "Villa Giusti",
+            "caption": "",
+            "src": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/giusti_1200-900.jpg",
+            "thumb": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/giusti_80-60.jpg",
+            "medium": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/giusti_160-120.jpg",
+            "big": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/giusti_700-525.jpg",
+            "width": 1200,
+            "height": 799
+        },
+        {
+            "index": 2,
+            "title": "Marlia Royal House",
+            "caption": "",
+            "src": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/Villa_reale_di_marlia_1200-900.jpg",
+            "thumb": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/Villa_reale_di_marlia_80-60.jpg",
+            "medium": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/Villa_reale_di_marlia_160-120.jpg",
+            "big": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/Villa_reale_di_marlia_700-525.jpg",
+            "width": 675,
+            "height": 900
+        },
+        {
+            "index": 3,
+            "title": "Villa Durazzo Pallavicini",
+            "caption": "",
+            "src": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/villaDurazzoPallavicini_1200-900.jpg",
+            "thumb": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/villaDurazzoPallavicini_80-60.jpg",
+            "medium": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/villaDurazzoPallavicini_160-120.jpg",
+            "big": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/villaDurazzoPallavicini_700-525.jpg",
+            "width": 1200,
+            "height": 896
+        },
+        {
+            "index": 4,
+            "title": "Villa Pisani",
+            "caption": "",
+            "src": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/VillaPisani_1200-900.jpg",
+            "thumb": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/VillaPisani_80-60.jpg",
+            "medium": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/VillaPisani_160-120.jpg",
+            "big": "http://foto.ilsole24ore.com/test/Quotidiano_Inside_Italy/Online/MediaCenter/Gallery/2014/ItalianGardens/img_ItalianGardens/VillaPisani_700-525.jpg",
+            "width": 1200,
+            "height": 900
+        }
+    ]
+}

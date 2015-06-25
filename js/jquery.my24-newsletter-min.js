@@ -1,0 +1,2 @@
+//{{{ GESTIONE MODALS
+(function(){function n(t){var n=$(t.currentTarget),r=typeof n.data("modal")=="undefined"?!0:!1;r===!1&&(t.data.modal_id="#"+n.data("modal"));$(t.data.modal_id).find(".thumbnail img").attr("src",n.attr("href"));e.fadeToggle(200);$(t.data.modal_id).fadeToggle(350);t.preventDefault()}var e=$("#bg-modal"),t=null;$(document).on("click","#bg-modal, *[data-modal]",{modal_id:t},n)})();
