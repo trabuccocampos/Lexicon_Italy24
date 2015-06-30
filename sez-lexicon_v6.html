@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <title>Lexicon | Italy24</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+    <!-- Le fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://c.res.24o.it/fonts/fonts.css?v1.0001" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css?v20140212" />
+    
+    <!-- jQuery -->
+    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+    
+    <!--  Lexicon + Lexicon Chart specific  -->
+    <link media="all" type="text/css" rel="stylesheet" href="http://www.italy24.ilsole24ore.com/css/lexicon.css">
+    <link rel="stylesheet" type="text/css" href="http://www.italy24.ilsole24ore.com/lexiconcity/web/css/digiLexiconBars.css">
+    <script type="text/javascript" src="http://www.italy24.ilsole24ore.com/lexiconcity/web/js/bar_1.js"></script>
+        
+    
+    <!-- aatc  -->
+    <link rel="stylesheet" type="text/css" href="./css/lexicon_v6.css" />
+    
+
+    <!--    Mapbox.js -->
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+    
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="./ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+</head>
+
+<body>
+    <div id="pg_wrapper">
+        <div id="sticky_header_phone">
+            <div class="container">
+                <menu>
+                    <a class="nav_show" href="#">
+                        <span class="icon-reorder"></span>
+                        <span class="icon-remove"></span>
+                    </a>
+                    <a class="search" href="#">
+                        <span class="icon-search"></span>
+                    </a>
+                    <a class="my24-log user-log" href="#">
+                        <span class="icon-user"></span>
+                    </a>
+                </menu>
+            </div>
+        </div>
+
+        <div id="wrapper">
+
+            <!-- Header
+        ================================================== -->
+            <div id="topw">
+                <div class="container">
+                    <div class="row">
+                        <div class="span7">
+
+                        </div>
+                        <div class="span5">
+                            <nav class="text-right">
+                                <li class="hidden-phone"><a href="./preferiti.html"><span class="icon-star-empty"></span></a>
+                                </li>
+                                <li id="headerLogin">
+                                    <a class="trigger not-logged last hidden-phone" href="javascript:void(0)"><span class="icon-my24"></span></a>
+                                    <div class="headerLogin-box">
+                                        <form name="authUser" method="post" action="#" id="login-form">
+                                            <div class="user">
+                                                <input type="text" id="txtUsername" name="txtUsername" placeholder="Username">
+                                            </div>
+                                            <div class="password">
+                                                <input placeholder="Password" name="password" class="r24query" autocomplete="off" type="text" />
+                                            </div>
+                                            <div class="stay-logged">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="stay-logged" checked="checked" /> Stay logged
+                                                </label>
+                                            </div>
+                                            <div class="submit-forgot">
+                                                <span class="submit">
+          <input type="submit" value="Login" />
+        </span>
+                                                <span class="forgot-password">
+          <a href="#" class="forgot-password">Forgot password?</a>
+        </span>
+                                            </div>
+                                            <div class="social">
+                                                <h6>You can also use:</h6>
+                                                <div class="icon-social">
+
+                                                    <a href="#"><img class="no" src="./img/social/fb.png" /><img class="ho" src="./img/social/fb_h.png" />
+                                                    </a>
+
+                                                    <a href="#"><img class="no" src="./img/social/tw.png" /><img class="ho" src="./img/social/tw_h.png" />
+                                                    </a>
+
+                                                    <a href="#"><img class="no" src="./img/social/go.png" /><img class="ho" src="./img/social/go_h.png" />
+                                                    </a>
+
+                                                    <a href="#"><img class="no" src="./img/social/in.png" /><img class="ho" src="./img/social/in_h.png" />
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="sign-up">
+                                                <a href="#">Are you a new user? <span>Sing up</span></a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <header id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="span8 identita">
+                            <a class="logo" href="./home.html">
+                                <img class="retina" src="./img/italy.png" alt="Italy24" />
+                            </a>
+                            <div class="bordered hidden-phone">
+                                <p>The first digital newspaper on Italy in English by</p>
+                                <a href="#">
+                                    <img class="retina" src="./img/il_sole_24_ore.png" alt="Il Sole 24 ore" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="pos">
+                                <a class="thumbnail hidden-phone b-wrap" href="#">
+                                    <img src="./storage/banner282x82.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sticky_header">
+                    <nav class="sezioni clearfix">
+                        <div class="container">
+                            <div class="row">
+                                <div class="span9">
+                                    <ul id="site-menu">
+                                        <li><a class="btn-menu  con-filtri" href="./home.html">Home</a>
+                                        </li>
+                                        <li><a class="btn-menu  con-filtri" href="./sez-analysis.html">Analysis</a>
+                                        </li>
+                                        <li><a class="btn-menu  con-filtri" href="./sez-data.html">Data</a>
+                                        </li>
+                                        <li><a class="btn-menu con-filtri" href="./sez-multimedia.html">Multimedia</a>
+                                        </li>
+                                        <li><a class="btn-menu  con-filtri" href="./sez-panorama.html">Panorama</a>
+                                        </li>
+                                        <li><a class="btn-menu active" href="./sez-lexicon.html">Lexicon</a>
+                                        </li>
+                                        <li class="visible-phone"><a class="btn-menu  con-filtri" href="./preferiti.html"><span class="icon-star-empty"></span> Favorites</a>
+                                        </li>
+                                        <li class="visible-phone"><a class="btn-menu" data-modal="popup-date" class="personalizza-modal" href="javascript:;"><span class="icon-time-machine"></span> Time Machine</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="span3 relative">
+                                    <ul id="nav-tools">
+                                        <li class="hidden-phone">
+                                            <a id="open-search" class="btn-tools" href="javascript:;"><span class="icon-search"></span></a>
+                                        </li>
+                                        <li class="hidden-phone last">
+                                            <a class="btn-tools" data-modal="popup-date" class="personalizza-modal" href="javascript:;"><span class="icon-time-machine"></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <form id="search" class="" action="./ricerca.html">
+                                <div class="wrapper">
+                                    <ul id="tool-ricerca">
+
+                                        <li class="li-input">
+                                            <input class="ricerca-keyword autocomplete" name="keyword" placeholder="Search" type="search" />
+                                        </li>
+                                        <li class="li-submit">
+                                            <button class="ricerca-submit" type="submit"><span class="icon-search"></span><span class="icon-chevron-right"></span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
+
+                </div>
+            </header>
+
+            <!-- Content
+        ================================================== -->
+            <div class="lexicon">
+                <div class="container">
+
+                    <div id="home">
+                        <div class="row relative">
+                            <div id="who" class="span4">
+                                <h1>Who</h1>
+                                <div class="articles">
+                                    <ol>
+                                        <li>
+                                            <h3>Giorgo Napolitano</h3>
+                                            <p>Date and place of birth: June 29, 1925, Naples. Current position: former 11th President of the Italian Republic. Previous positions: President of the Italian...</p>
+                                            <a href="http://www.italy24.ilsole24ore.com/art/lexicon/2014-07-18/giorgio-napolitano-165708.php?uuid=ABDhQEcB" class="btn btn-goto">Go to the complete definition <span class="icon-angle-right"></span></a>
+                                        </li>
+
+                                        <li>
+                                            <h3>John Elkann</h3>
+                                            <p>Date and place of birth: April 1, 1976, New York. Current position: Exor SpA chief executive, Fiat Chrysler Automobiles NV chairman, board member of News Corp...</p>
+                                            <a href="http://www.italy24.ilsole24ore.com/art/lexicon/2014-07-18/john-elkann-134927.php?uuid=ABRLeAcB" class="btn btn-goto">Go to the complete definition <span class="icon-angle-right"></span></a>
+                                        </li>
+                                        <li>
+                                            <h3>Alessandro Castellano</h3>
+                                            <p>Date and place of birth: April 14, 1958, Rome Current position: CEO of SACE Previous: He joined SACE in 2004 as General Manager assuming overall ...</p>
+                                            <a href="http://www.italy24.ilsole24ore.com/art/lexicon/2014-12-09/alessandro-castellano-112048.php?uuid=ABghR5NC" class="btn btn-goto">Go to the complete definition <span class="icon-angle-right"></span></a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div id="what" class="span4">
+                                <h1>What</h1>
+                                <div class="articles">
+                                    <ol>
+                                        <li>
+                                            <h3>Poste Italiane</h3>
+                                            <p>Italy's postal service, and also one of the country's biggest financial services providers. It acts as the leading source of funds for Cassa Depositi e ...</p>
+                                            <a href="http://www.italy24.ilsole24ore.com/art/lexicon/2014-08-19/poste-italiane-120712.php?uuid=AB6OGYlB" class="btn btn-goto">Go to the complete definition <span class="icon-angle-right"></span></a>
+                                        </li>
+
+                                        <li>
+                                            <h3>Intesa Sanpaolo</h3>
+                                            <p>Market capitalization: €33.4 billion Founded: January 1, 2007 (from merger of Banca Intesa and San Paolo IMI) Total assets: €628.3 billion CEO: Carlo...</p>
+                                            <a href="http://www.italy24.ilsole24ore.com/art/lexicon/2014-07-16/intesa-sanpaolo-150334.php?uuid=AB5X7DbB" class="btn btn-goto">Go to the complete definition <span class="icon-angle-right"></span></a>
+                                        </li>
+                                        <li>
+                                            <h3>Confindustria</h3>
+                                            <p>Confindustria is the main organization representing Italian manufacturing and services companies, founded in 1910. A total of 149,288 companies of all sizes...</p>
+                                            <a href="http://www.italy24.ilsole24ore.com/art/lexicon/2014-08-13/confindustria-123004.php?uuid=ABYg0ujB" class="btn btn-goto">Go to the complete definition <span class="icon-angle-right"></span></a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            
+                            
+                            
+<!--                            WHERE -->
+                           
+                            <div id="where" class="span4">
+                                <h1>Where</h1>
+                                <div class="articles">
+                                    <header>
+                                        <h6 class="meta tas04">
+                                            <a href="/panorama/Detour-24/">Detour 24</a>
+                                                <time datetime="2015-02-02">February  2, 2015</time>
+                                        </h6>
+                                        <h3><a href="/art/arts-and-leisure/2015-01-27/-detour-napoli-155744.php?uuid=ABzZdqkC">Naples, where every slice of history adds to the beauty of one of Italy's most charming cities</a></h3>
+                                        <p>
+                                            <small>by <span class="autore">Carmine Fotina</span></small>
+                                        </p>
+                                    </header>
+
+
+                                    <!--                                    QdV15 -->
+                                    <div class="span4 digitelematica">
+                                        <div id="chart">
+                                            <h2>&mdash; Milan</h2>
+                                             <div id="wealth" class="barItem">
+                                                    <div class="barItemLabel">
+                                                        <span class="barItemName"><br>Wealth</span>
+                                                        <span class="barItemExp">Gdp per capita</span>
+                                                        <span class="barItemValue" style="color: rgb(115, 135, 84);">36,200</span>
+                                                        <span class="barItemItalyValue">ITALY  23,239</span>
+                                                        <span class="barItemExpLight">EUR/year, 2012</span>
+                                                    </div>
+                                                    <div id="wealth_barBase" class="barBase">
+                                                        <div class="line"><img alt="" src="http://www.italy24.ilsole24ore.com/lexiconcity/web/image/line.png">
+                                                        </div>
+                                                        <div id="wealth_bar" class="bar" style="width: 214.225px; background-color: rgb(115, 135, 84);"></div>
+                                                    </div>
+                                                </div>
+                                                
+                                            <div id="unemployment" class="barItem">
+                                                <div class="line"></div>
+                                                <div class="barItemLabel">
+                                                    <span class="barItemName"><br>Unemployment</span>
+                                                    <span class="barItemExp">Unemployment rate</span>
+
+                                                    <span class="barItemValue" style="color: rgb(115, 135, 84);">7.8%</span>
+                                                    <span class="percComp2Italy"></span>
+                                                    <span class="barItemItalyValue">ITALY  12.7%</span>
+                                                    <span class="barItemExpLight"></span>
+                                                </div>
+                                                <div id="unemployment_barBase" class="barBase">
+                                                    <div class="line"><img alt="" src="http://www.italy24.ilsole24ore.com/lexiconcity/web/image/line.png">
+                                                    </div>
+                                                    <div id="unemployment_bar" class="bar" style="width: 84.326px; background-color: rgb(115, 135, 84);"></div>
+                                                </div>
+                                            </div>
+                                                
+                                            <div id="consumptions" class="barItem">
+                                                <div class="line"></div>
+                                                <div class="barItemLabel">
+                                                    <span class="barItemName"><br>Consumption</span>
+                                                    <span class="barItemExp">Per capita expenditure in cars, <br>motorbikes and electronics</span>
+
+                                                    <span class="barItemValue" style="color: rgb(115, 135, 84);">1,153</span><span class="percComp2Italy"></span><span class="barItemItalyValue">ITALY  885</span>
+                                                    <span class="barItemExpLight">EUR/year, 2012</span>
+
+                                                </div>
+                                                <div id="consumptions_barBase" class="barBase">
+                                                    <div class="line"><img alt="" src="http://www.italy24.ilsole24ore.com/lexiconcity/web/image/line.png">
+                                                    </div>
+                                                    <div id="consumptions_bar" class="bar" style="width: 179.1625px; background-color: rgb(115, 135, 84);"></div>
+                                                </div>
+                                            </div>    
+                                                
+                                            <div id="judicial_system" class="barItem">
+                                                <div class="line"></div>
+                                                <div class="barItemLabel">
+                                                    <span class="barItemName"><br>Justice system</span>
+                                                    <span class="barItemExp">Ratio of judgements per pending/new cases<br> in 2012 x 100</span>
+
+                                                    <span class="barItemValue" style="color: rgb(216, 2, 29);">48.1</span>
+                                                    <span class="percComp2Italy"></span>
+                                                    <span class="barItemItalyValue">ITALY  33.5</span>
+                                                    <span class="barItemExpLight"></span>
+
+                                                </div>
+                                                <div id="judicial_system_barBase" class="barBase">
+                                                    <div class="line"><img alt="" src="http://www.italy24.ilsole24ore.com/lexiconcity/web/image/line.png">
+                                                    </div>
+                                                    <div id="judicial_system_bar" class="bar" style="width: 197.45px; background-color: rgb(216, 2, 29);"></div>
+                                                </div>
+                                            </div>
+                                                
+                                                <div id="exports" class="barItem">
+                                                    <div class="line"></div>
+                                                    <div class="barItemLabel">
+                                                        <span class="barItemName"><br>Exports</span>
+                                                        <span class="barItemExp">Exports as a % of the province Gdp</span>
+
+                                                        <span class="barItemValue" style="color: rgb(115, 135, 84);">32%</span><span class="percComp2Italy"></span><span class="barItemItalyValue">ITALY  29%</span>
+                                                        <span class="barItemExpLight"></span>
+
+                                                    </div>
+                                                    <div id="exports_barBase" class="barBase">
+                                                        <div class="line"><img alt="" src="http://www.italy24.ilsole24ore.com/lexiconcity/web/image/line.png">
+                                                        </div>
+                                                        <div id="exports_bar" class="bar" style="width: 149.913194444444px; background-color: rgb(115, 135, 84);"></div>
+                                                    </div>
+                                                </div>
+                                                
+                                            <div id="ict_diffusion" class="barItem">
+                                                <div class="line"></div>
+                                                <div class="barItemLabel">
+                                                    <span class="barItemName"><br>ICT diffusion</span>
+                                                    <span class="barItemExp">Broadband coverage</span>
+
+                                                    <span class="barItemValue" style="color: rgb(115, 135, 84);">97.4%</span>
+                                                    <span class="percComp2Italy"></span>
+                                                    <span class="barItemItalyValue">ITALY  94.5%</span>
+                                                    <span class="barItemExpLight">(% of population)</span>
+                                                </div>
+                                                <div id="ict_diffusion_barBase" class="barBase">
+                                                    <div class="line"><img alt="" src="http://www.italy24.ilsole24ore.com/lexiconcity/web/image/line.png">
+                                                    </div>
+                                                    <div id="ict_diffusion_bar" class="bar" style="width: 141.719576719577px; background-color: rgb(115, 135, 84);"></div>
+                                                </div>
+                                            </div>
+
+                                                <div id="bank_deposits" class="barItem">
+                                                    <div class="line"></div>
+                                                    <div class="barItemLabel">
+                                                        <span class="barItemName"><br>Bank deposits</span>
+                                                        <span class="barItemExp">Bank deposits per capita</span>
+
+                                                        <span class="barItemValue" style="color: rgb(115, 135, 84);">39,418</span><span class="percComp2Italy"></span><span class="barItemItalyValue">ITALY  20,486</span>
+                                                        <span class="barItemExpLight">EUR</span>
+
+                                                    </div>
+                                                    <div id="bank_deposits_barBase" class="barBase">
+                                                        <div class="line"><img alt="" src="http://www.italy24.ilsole24ore.com/lexiconcity/web/image/line.png">
+                                                        </div>
+                                                        <div id="bank_deposits_bar" class="bar" style="width: 264.55px; background-color: rgb(115, 135, 84);"></div>
+                                                    </div>
+                                                </div>
+                                                
+                                            <div id="youth" class="barItem">
+                                                <div class="line"></div>
+                                                <div class="barItemLabel">
+                                                    <span class="barItemName"><br>Youth</span>
+                                                    <span class="barItemExp">Share of population under the age of 30</span>
+
+                                                    <span class="barItemValue" style="color: rgb(216, 2, 29);">27.4%</span>
+                                                    <span class="percComp2Italy"></span>
+                                                    <span class="barItemItalyValue">ITALY  28.7%</span>
+                                                    <span class="barItemExpLight"></span>
+                                                </div>
+                                                <div id="youth_barBase" class="barBase">
+                                                    <div class="line"><img alt="" src="http://www.italy24.ilsole24ore.com/lexiconcity/web/image/line.png">
+                                                    </div>
+                                                    <div id="youth_bar" class="bar" style="width: 131.271777003484px; background-color: rgb(216, 2, 29);"></div>
+                                                </div>
+                                            </div>
+                                                
+                                                 <div id="entrepreneurship" class="barItem">
+                                                    <div class="line"></div>
+                                                    <div class="barItemLabel">
+                                                        <span class="barItemName"><br>Entrepreneurship</span>
+                                                        <span class="barItemExp">Registered companies per 100 inhabitants</span>
+
+                                                        <span class="barItemValue" style="color: rgb(115, 135, 84);">10.9</span>
+                                                        <span class="percComp2Italy"></span>
+                                                        <span class="barItemItalyValue">ITALY  10.2</span>
+                                                        <span class="barItemExpLight"></span>
+
+                                                    </div>
+                                                    <div id="entrepreneurship_barBase" class="barBase">
+                                                        <div class="line"><img alt="" src="http://www.italy24.ilsole24ore.com/lexiconcity/web/image/line.png">
+                                                        </div>
+                                                        <div id="entrepreneurship_bar" class="bar" style="width: 146.936274509804px; background-color: rgb(115, 135, 84);"></div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div id="education" class="barItem">
+                                                    <div class="line"></div>
+                                                    <div class="barItemLabel">
+                                                        <span class="barItemName"><br>Education</span>
+                                                        <span class="barItemExp">N. of graduates every 1,000 people aged<br> between 25 and 30 in 2012</span>
+
+                                                        <span class="barItemValue" style="color: rgb(115, 135, 84);">74.3</span>
+                                                        <span class="percComp2Italy"></span>
+                                                        <span class="barItemItalyValue">ITALY  71</span>
+                                                        <span class="barItemExpLight"></span>
+                                                    </div>
+                                                    <div id="education_barBase" class="barBase">
+                                                        <div class="line"><img alt="" src="http://www.italy24.ilsole24ore.com/lexiconcity/web/image/line.png">
+                                                        </div>
+                                                        <div id="education_bar" class="bar" style="width: 143.825px; background-color: rgb(115, 135, 84);"></div>
+                                                    </div>
+                                                </div>
+
+                                            <a href="#" class="btn btn-goto">Explore more  <span class="icon-angle-right"></span></a>
+                                            <div class="clearfix"></div>
+                                            <script type="text/javascript">
+                                                var b = new Bar('milano');
+                                                b.initBar();
+                                            </script>
+                                        </div>
+
+                                        <footer>
+                                            <span class="uppercase">Sources: 
+                                            (1) Istituto Tagliacarne, 
+                                            (2) Istat, 
+                                            (3) Findomestic, 
+                                            (4) Ministry of Justice, 
+                                            (5) Prometeia, 
+                                            (6) Osservatorio Banda Larga, 
+                                            (7) Abi-Bankitalia, 
+                                            (8) Datagiovani, 
+                                            (9) Infocamere, 
+                                            (10) Ministry of education
+                                            </span>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END who, what, where ROW -->
+                            
+                            
+                            
+
+                            <div class="row">
+                                <div class="span12">
+                                    <div class="nav-letter">
+                                        <h1>— Index <small>Find a subject in albhabetic order</small></h1>
+                                        <nav>
+                                            <ol class="nav">
+                                                <li><a class="" href="#section-A"  data-toggle="collapse" aria-expanded="false" aria-controls="section-A"> A</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-B">B</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-C">C</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-D">D</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-E">E</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-F">F</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-G">G</a>
+                                                </li>
+                                                <li><span>H</span>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-I">I</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-J">J</a>
+                                                </li>
+                                                <li><span>K</span>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-L">L</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-M">M</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-N">N</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-O">O</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-P">P</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-Q">Q</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-R">R</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-S">S</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-T">T</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-U">U</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-V">V</a>
+                                                </li>
+                                                <li><span>W</span>
+                                                </li>
+                                                <li><span>X</span>
+                                                </li>
+                                                <li><span>Y</span>
+                                                </li>
+                                                <li><span>Z</span>
+                                                </li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="separator"></span>
+
+                            <div class="o-list letter-list">
+                                <ol>
+                                    <li>
+                                        <section id="section-A" class="section-list letter collapse">
+                                            <h1 id="letter-A"><span class="t_wrap">A</span></h1>
+                                            <div class="row-elements">
+                                                <div class="element">
+                                                    <div class="panel-group" id="">
+                                                        <div class="panel panel-primary">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title collapser">
+
+                                                                                            <a class="icon-caret-down accordion-toggle lexiconpage" data-uuid="ABRfK17B" data-toggle="collapse" data-parent="#accordion" data-content="#pannello-A1" href="#pannello-A1">
+                                                                                            ADR
+                                                                                            </a>
+                                                                                        </h4>
+                                                            </div>
+                                                            <div id="pannello-A1" class="panel-collapse collapse" style="height: 0px;">
+                                                                <div class="panel-body"></div>
+                                                                <p class="text-right">
+                                                                    <a href="/art/lexicon/2014-10-29/adr-135302.php?uuid=ABRfK17B">Go to the complete definition</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="element">
+                                                    <div class="panel-group" id="">
+                                                        <div class="panel panel-primary">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title collapser">
+                                                                    <a class="icon-caret-down accordion-toggle lexiconpage" data-uuid="ABSeOJbB" data-toggle="collapse" data-parent="#accordion" data-content="#pannello-A2" href="#pannello-A2">
+                                                                      AGCOM
+                                                                    </a>
+                                                            </h4>
+                                                            </div>
+                                                            <div id="pannello-A2" class="panel-collapse collapse" style="height: 0px;">
+                                                                <div class="panel-body"></div>
+                                                                <p class="text-right">
+                                                                    <a href="/art/lexicon/2014-07-16/agcom-144933.php?uuid=ABSeOJbB">Go to the complete definition</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </li>
+                                </ol>
+                            </div>
+
+
+                            <!-- MAPBOX -->
+                            <div class="row">
+                                <div class="span12">
+                                    <div class="where">
+
+                                    <!-- MAPBOX -->
+                                    <div class="mapbox qdv-popup" id="map"></div>
+
+                                    <div class="map-overlay">
+                                        <h6 class="meta tas03">
+                                            <a href="/lexicon">Lexicon</a>
+                                            &nbsp;›&nbsp;
+                                            <a href="/lexicon/where">Where</a>
+                                        </h6>
+                                        <header class="detour-24">
+                                            <h6 class="meta tas04">
+                                                <a href="/panorama/Detour-24/">Detour 24</a>
+                                                    <time datetime="2015-02-02">August 18, 2015</time>
+                                            </h6>
+                                            <h3><a href="/art/arts-and-leisure/2015-01-27/-detour-napoli-155744.php?uuid=ABzZdqkC">NAPLES, where every slice of history adds to the beauty of one of Italy's most charming cities</a></h3>
+                                            <p>
+                                                <small>by <span class="autore">Carmine Fotina</span></small>
+                                            </p>
+                                        </header>
+                                        <header class="detour-24">
+                                            <h6 class="meta tas04">
+                                                <a href="/panorama/Detour-24/">Detour 24</a>
+                                                    <time datetime="2015-02-02">July 2, 2015</time>
+                                            </h6>
+                                            <h3><a href="/art/arts-and-leisure/2015-01-27/-detour-napoli-155744.php?uuid=ABzZdqkC">MILAN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h3>
+                                            <p>
+                                                <small>by <span class="autore">Carmine Fotina</span></small>
+                                            </p>
+                                        </header>
+                                        <header class="detour-24">
+                                            <h6 class="meta tas04">
+                                                <a href="/panorama/Detour-24/">Detour 24</a>
+                                                    <time datetime="2015-02-02">June 25, 2015</time>
+                                            </h6>
+                                            <h3><a href="/art/arts-and-leisure/2015-01-27/-detour-napoli-155744.php?uuid=ABzZdqkC">BARI sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></h3>
+                                            <p>
+                                                <small>by <span class="autore">Carmine Fotina</span></small>
+                                            </p>
+                                        </header>
+                                        <header class="detour-24">
+                                            <h6 class="meta tas04">
+                                                <a href="/panorama/Detour-24/">Detour 24</a>
+                                                    <time datetime="2015-02-02">June 3, 2015</time>
+                                            </h6>
+                                            <h3><a href="/art/arts-and-leisure/2015-01-27/-detour-napoli-155744.php?uuid=ABzZdqkC">FLORENCE enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</a></h3>
+                                            <p>
+                                                <small>by <span class="autore">Carmine Fotina</span></small>
+                                            </p>
+                                        </header>
+                                        <header class="detour-24">
+                                            <h6 class="meta tas04">
+                                                <a href="/panorama/Detour-24/">Detour 24</a>
+                                                    <time datetime="2015-02-02">May 5, 2015</time>
+                                            </h6>
+                                            <h3><a href="/art/arts-and-leisure/2015-01-27/-detour-napoli-155744.php?uuid=ABzZdqkC">ROME porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</a></h3>
+                                            <p>
+                                                <small>by <span class="autore">Carmine Fotina</span></small>
+                                            </p>
+                                        </header>
+                                        </div>
+
+                                        <div class="map-overlay-scroll">
+                                            <span class="icon-caret-down"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+                <!-- Footer
+        ================================================== -->
+
+                <footer id="footer">
+                    <div class="container">
+                        <a class="sole-logo" href="#">
+                            <img class="retina" src="./img/il_sole_24_ore_white.png" alt="Il Sole 24 ore" />
+                        </a>
+                        <ul>
+                            <li><a href="#">About us</a>
+                            </li>
+                            <li><a href="mailto:xxxitaly24@ilsole24ore.com">Contact us</a>
+                            </li>
+                            <li><a href="mailto:xxxitaly24@ilsole24ore.com">Subscribe</a>
+                            </li>
+                            <li><a href="./suggestions.html">Suggestions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+
+
+            </div>
+        </div>
+
+
+        <!-- Modal popup
+    ================================================== -->
+        <div id="bg-modal"></div>
+        <div id="popup-date">
+            <div class="popup-wrapper">
+                <h5>Time Machine <span data-modal="popup-date" class="icon-remove"></span></h5>
+
+                <div class="scegli">
+                    <h6><a class="current" href="">Week <span class="icon-chevron-right"></span></a></h6>
+                </div>
+
+                <div class="scegli">
+                    <h6><a class="" href="">Month <span class="icon-chevron-right"></span></a></h6>
+                </div>
+
+                <h6>Customize</h6>
+                <menu id="filtro-date">
+                    <li>
+                        <label for="dal">From</label>
+                        <input id="dal" type="text">
+                        <span id="dal-icon" class="icon-calendar"></span>
+                    </li>
+                    <li>
+                        <label for="al">To</label>
+                        <input id="al" type="text">
+                        <span id="al-icon" class="icon-calendar"></span>
+                    </li>
+                    <li class="last">
+                        <button data-modal="popup-date" id="filtra" type="button">FILTER</button>
+
+                    </li>
+                </menu>
+            </div>
+        </div>
+
+
+        <!-- Le javascript
+    ================================================== -->
+        <script type="text/javascript" src="./js/jquery.placeholder-min.js"></script>
+        <script type="text/javascript" src="./js/jquery.sticky-kit.min.js"></script>
+        <script type="text/javascript" src="./js/jquery-ui-1.10.3.datepicker.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap-transition.js"></script>
+        <script type="text/javascript" src="./js/bootstrap-collapse.js"></script>
+        <script type="text/javascript" src="./js/bootstrap-dropdown.js"></script>
+        <script type="text/javascript" src="./js/bootstrap-typeahead.js"></script>
+        <script type="text/javascript" src="./js/retina-min.js"></script>
+        <script type="text/javascript" src="./js/readmore.min.js"></script>
+
+        <script type="text/javascript" src="./js/bootstrap-tooltip.js"></script>
+        <script type="text/javascript" src="./js/bootstrap-popover.js"></script>
+
+        <script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.carouFredSel-6.2.1-packed-min.js"></script>
+
+        <script type="text/javascript" src="./js/jquery.ready-min.js"></script>
+        <!-- Qui il JS con elenco TAG -->
+        <script type="text/javascript" src="./storage/tag_list.js"></script>
+        
+
+        <!-- Analytics
+    ================================================== -->
+        
+
+        <!-- Mapbox.js
+    ================================================== -->
+
+        <script>
+        L.mapbox.accessToken = 'pk.eyJ1IjoidHJhYnVjY29jYW1wb3MiLCJhIjoiTkN5WUlfWSJ9.58ow8y8xAzmtXDrCHATSDw';
+        var map = L.mapbox.map('map', 'trabuccocampos.4dae7036', {
+            minZoom: 6,
+            maxZoom: 13,
+            zoomControl: false,
+            legendControl: {
+                // Any of the valid control positions:
+                // https://www.mapbox.com/mapbox.js/api/v2.1.5/l-control/#control-positions
+                position: 'topright'
+            }
+        })
+            .setView([42, 12.5], 6)
+            .addControl(L.mapbox.geocoderControl('mapbox.places', {
+                autocomplete: true,
+                keepOpen: true
+            }));
+        
+        new L.Control.Zoom({ position: 'topright' }).addTo(map);
+        
+        var marker = L.mapbox.featureLayer({
+            // this feature is in the GeoJSON format: see geojson.org
+            // for the full specification
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                // coordinates here are in longitude, latitude order because
+                // x, y is the standard for GeoJSON and many formats
+                coordinates: [
+                  9.1833,
+                  45.4667 
+                ]
+            },
+            properties: {
+                title: 'Milan',
+                description: 'Lombardy',
+                // one can customize markers by adding simplestyle properties
+                // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+                'marker-size': 'large',
+                'marker-color': '#234357',
+                'marker-symbol': 'circle'
+            }
+        }).addTo(map);
+        
+        var popup = new L.Popup({ autoPan: false });
+        
+        // label layer
+        var labels = L.mapbox.tileLayer('trabuccocampos.2e1bec86').addTo(map);
+        
+        
+        
+        /***************
+            REGIONI
+        ****************/
+        
+        // regionsIT
+        var regions = L.mapbox.tileLayer('trabuccocampos.30929520').addTo(map);
+        
+        // the function given to this callback will be called every time the map
+        // completes a zoom animation.
+        regions.on('zoomend', function() {
+            // here's where you decided what zoom levels the layer should and should
+            // not be available for: use javascript comparisons like < and > if
+            // you want something other than just one zoom level, like
+            // (map.getZoom > 10)
+            if (map.getZoom > 7) {
+                // setFilter is available on L.mapbox.featureLayers only. Here
+                // we're hiding and showing the default marker layer that's attached
+                // to the map - change the reference if you want to hide or show a
+                // different featureLayer.
+                // If you want to hide or show a different kind of layer, you can use
+                // similar methods like .setOpacity(0) and .setOpacity(1)
+                // to hide or show it.
+                map.featureLayer.setOpacity(0);
+            } else {
+                map.featureLayer.setOpacity(1);
+            }
+        });        
+        
+    </script>
+
+
+
+</body>
+
+</html>

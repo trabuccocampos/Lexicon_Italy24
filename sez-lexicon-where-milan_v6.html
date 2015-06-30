@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <title>Lexicon | Italy24</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+    <!-- Le fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://c.res.24o.it/fonts/fonts.css?v1.0001" />
+
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css?v20140212" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+
+    <!--  Lexicon + Lexicon Chart specific  -->
+    <link media="all" type="text/css" rel="stylesheet" href="http://www.italy24.ilsole24ore.com/css/lexicon.css">
+    <link rel="stylesheet" type="text/css" href="http://www.italy24.ilsole24ore.com/lexiconcity/web/css/digiLexiconBars.css">
+    <script type="text/javascript" src="http://www.italy24.ilsole24ore.com/lexiconcity/web/js/bar_1.js"></script>
+
+
+    <!-- aatc  -->
+    <link rel="stylesheet" type="text/css" href="./css/lexicon_v6.css" />
+
+
+    <!--    Mapbox.js -->
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="./ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+</head>
+
+<body>
+    <div id="pg_wrapper">
+        <div id="sticky_header_phone">
+            <div class="container">
+                <menu>
+                    <a class="nav_show" href="#">
+                        <span class="icon-reorder"></span>
+                        <span class="icon-remove"></span>
+                    </a>
+                    <a class="search" href="#">
+                        <span class="icon-search"></span>
+                    </a>
+                    <a class="my24-log user-log" href="#">
+                        <span class="icon-user"></span>
+                    </a>
+                </menu>
+            </div>
+        </div>
+
+        <div id="wrapper">
+
+            <!-- Header
+        ================================================== -->
+            <div id="topw">
+                <div class="container">
+                    <div class="row">
+                        <div class="span7">
+
+                        </div>
+                        <div class="span5">
+                            <nav class="text-right">
+                                <li class="hidden-phone"><a href="./preferiti.html"><span class="icon-star-empty"></span></a>
+                                </li>
+                                <li id="headerLogin">
+                                    <a class="trigger not-logged last hidden-phone" href="javascript:void(0)"><span class="icon-my24"></span></a>
+                                    <div class="headerLogin-box">
+                                        <form name="authUser" method="post" action="#" id="login-form">
+                                            <div class="user">
+                                                <input type="text" id="txtUsername" name="txtUsername" placeholder="Username">
+                                            </div>
+                                            <div class="password">
+                                                <input placeholder="Password" name="password" class="r24query" autocomplete="off" type="text" />
+                                            </div>
+                                            <div class="stay-logged">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="stay-logged" checked="checked" /> Stay logged
+                                                </label>
+                                            </div>
+                                            <div class="submit-forgot">
+                                                <span class="submit">
+          <input type="submit" value="Login" />
+        </span>
+                                                <span class="forgot-password">
+          <a href="#" class="forgot-password">Forgot password?</a>
+        </span>
+                                            </div>
+                                            <div class="social">
+                                                <h6>You can also use:</h6>
+                                                <div class="icon-social">
+
+                                                    <a href="#"><img class="no" src="./img/social/fb.png" /><img class="ho" src="./img/social/fb_h.png" />
+                                                    </a>
+
+                                                    <a href="#"><img class="no" src="./img/social/tw.png" /><img class="ho" src="./img/social/tw_h.png" />
+                                                    </a>
+
+                                                    <a href="#"><img class="no" src="./img/social/go.png" /><img class="ho" src="./img/social/go_h.png" />
+                                                    </a>
+
+                                                    <a href="#"><img class="no" src="./img/social/in.png" /><img class="ho" src="./img/social/in_h.png" />
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="sign-up">
+                                                <a href="#">Are you a new user? <span>Sing up</span></a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <header id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="span8 identita">
+                            <a class="logo" href="./home.html">
+                                <img class="retina" src="./img/italy.png" alt="Italy24" />
+                            </a>
+                            <div class="bordered hidden-phone">
+                                <p>The first digital newspaper on Italy in English by</p>
+                                <a href="#">
+                                    <img class="retina" src="./img/il_sole_24_ore.png" alt="Il Sole 24 ore" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="pos">
+                                <a class="thumbnail hidden-phone b-wrap" href="#">
+                                    <img src="./storage/banner282x82.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sticky_header">
+                    <nav class="sezioni clearfix">
+                        <div class="container">
+                            <div class="row">
+                                <div class="span9">
+                                    <ul id="site-menu">
+                                        <li><a class="btn-menu  con-filtri" href="./home.html">Home</a>
+                                        </li>
+                                        <li><a class="btn-menu  con-filtri" href="./sez-analysis.html">Analysis</a>
+                                        </li>
+                                        <li><a class="btn-menu  con-filtri" href="./sez-data.html">Data</a>
+                                        </li>
+                                        <li><a class="btn-menu con-filtri" href="./sez-multimedia.html">Multimedia</a>
+                                        </li>
+                                        <li><a class="btn-menu  con-filtri" href="./sez-panorama.html">Panorama</a>
+                                        </li>
+                                        <li><a class="btn-menu active" href="./sez-lexicon.html">Lexicon</a>
+                                        </li>
+                                        <li class="visible-phone"><a class="btn-menu  con-filtri" href="./preferiti.html"><span class="icon-star-empty"></span> Favorites</a>
+                                        </li>
+                                        <li class="visible-phone"><a class="btn-menu" data-modal="popup-date" class="personalizza-modal" href="javascript:;"><span class="icon-time-machine"></span> Time Machine</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="span3 relative">
+                                    <ul id="nav-tools">
+                                        <li class="hidden-phone">
+                                            <a id="open-search" class="btn-tools" href="javascript:;"><span class="icon-search"></span></a>
+                                        </li>
+                                        <li class="hidden-phone last">
+                                            <a class="btn-tools" data-modal="popup-date" class="personalizza-modal" href="javascript:;"><span class="icon-time-machine"></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <form id="search" class="" action="./ricerca.html">
+                                <div class="wrapper">
+                                    <ul id="tool-ricerca">
+
+                                        <li class="li-input">
+                                            <input class="ricerca-keyword autocomplete" name="keyword" placeholder="Search" type="search" />
+                                        </li>
+                                        <li class="li-submit">
+                                            <button class="ricerca-submit" type="submit"><span class="icon-search"></span><span class="icon-chevron-right"></span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- Content
+        ================================================== -->
+            <div class="lexicon">
+                <div class="container">
+
+                    <div id="home">
+                        <div class="row relative">
+                            <div class="where">
+
+                                <!-- MAPBOX -->
+                                <div class="mapbox qdv-popup" id="map"></div>
+                                
+                                <div class="map-overlay">
+                                    <h1>Milan</h1>
+                                    <div class="articles">
+                                        <p>
+                                            <b>Headquarters of: </b>Prada; Armani; Versace; UniCredit; Pirelli; Edison; Fininvest; Saras, Riva Group; ERG; RCS Media Group; Faema.
+                                            <br>
+                                            <br>
+                                            <b>Birthplace of: </b>Alessandro Manzoni, Cesare Beccaria, Diana Bracco, Giangiacomo Feltrinelli, Leonardo Del Vecchio, Susanna Camusso, Marco Tronchetti Provera; Silvio Berlusconi; Guido Crepax; Giorgio Oliviero Toscani, Carla Fracci<b>
+                                           <br>
+                                           <br>
+                                           Famous for:</b> La Scala; spired Duomo; Inter and Milan soccer clubs; Expo 2015, risotto alla milanese, cotoletta alla milanese
+                                            <br>
+                                            <br>
+                                            <b>Leading political party:</b> Partito Democratico (PD), democratic party, center-left.
+                                        </p>
+                                        
+                                        <table class="lexicontable_city">
+                                        <tbody>
+                                            <tr>
+                                                <td class="label">Population</td>
+                                                <td class="value value__pop">1,316,052</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="label">Rank</td>
+                                                <td class="value">2nd, Italy</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                        
+                                        <header class="detour-24">
+                                        <h6 class="meta tas04">
+                                            <a href="/panorama/Detour-24/">Detour 24</a>
+                                                <time datetime="2015-02-02">July 2, 2015</time>
+                                        </h6>
+                                        <h3><a href="/art/arts-and-leisure/2015-01-27/-detour-napoli-155744.php?uuid=ABzZdqkC">Naples, where every slice of history adds to the beauty of one of Italy's most charming cities</a></h3>
+                                        <p>
+                                            <small>by <span class="autore">Carmine Fotina</span></small>
+                                        </p>
+                                    </header>
+                                    </div>
+                                    
+                                    <div class="map-overlay-scroll">
+                                        <span class="icon-caret-down"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="separator"></span>
+                            <span class="separator"></span>
+
+
+                            <!--  ARTICOLI -->
+
+                            <div id="ricerca">
+                                <div class="row">
+                                    <div class="span12">
+                                        <header class="risultati">
+
+                                            <div class="row">
+                                                <div class="span6">
+                                                    <p><strong>383</strong> results for <strong id="keySearch">"Milan"</strong>
+                                                    </p>
+                                                </div>
+                                                <div class="span6">
+                                                    <p id="ordina" class="text-right">
+                                                        <span>Order by:</span> <a data-filter="newest" href="http://www.italy24.ilsole24ore.com/art/lexicon/2014-08-12/milan-164305.php?uuid=ABUFigjB&amp;order=newest">newest</a>&nbsp;|&nbsp;<a data-filter="oldest" href="http://www.italy24.ilsole24ore.com/art/lexicon/2014-08-12/milan-164305.php?uuid=ABUFigjB&amp;order=oldest">oldest</a>&nbsp;|&nbsp;<a data-filter="relevance" href="http://www.italy24.ilsole24ore.com/art/lexicon/2014-08-12/milan-164305.php?uuid=ABUFigjB&amp;order=relevance" class="active">relevance</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </header>
+                                    </div>
+                                </div>
+                                <span class="separator"></span>
+                                <div class="row relative">
+                                    <div class="span12">
+                                        <div id="infinite-list">
+                                            <pageinfo data-currentpage="1" data-lastpage="39">
+                                                <ol class="dayblock">
+
+                                                    <li class="articolo">
+                                                        <div>
+                                                            <article class="">
+                                                                <div class="row">
+                                                                    <div class="span2">
+                                                                        <a class="thumbnail t_video" href="/art/arts-and-leisure/2014-12-18/lucio-fontana-and-his-friend-yves-klein-091716.php?uuid=ABNdlXSC">
+                                                                            <img src="http://www.italy24.ilsole24ore.com/images2014/Editrice/ILSOLE24ORE/QUOTIDIANO_INSIDE_ITALY/2014/12/19/Quotidiano%20Inside%20Italy/ImmaginiWeb/01_NEON.jpg">
+
+
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="span6">
+                                                                        <header>
+                                                                            <h6 class="meta tas08">
+                                <a href="/multimedia/Arts-and-Leisure/">Arts and Leisure</a>
+                                                    <time datetime="2014-12-19">August 19, 2014</time>
+                        </h6>
+                                                                            <h3><a href="/art/arts-and-leisure/2014-12-18/lucio-fontana-and-his-friend-yves-klein-091716.php?uuid=ABNdlXSC">Lucio Fontana and his friend Yves Klein</a></h3>
+                                                                            <p>
+                                                                                <small>by <span class="autore">Gabi Scardi</span></small>
+                                                                            </p>
+                                                                        </header>
+                                                                        <p>August 1957: at the Apollinaire Gallery in Via Brera in <em>Milan</em>, French artist Yves Klein exhibited his Blue Monochromes for the first time. The exhibition lasted just a few days, from August 2 to 7,&nbsp;...</p>
+
+                                                                        <a data-uuid="ABNdlXSC" data-shorturl="/art/arts-and-leisure/2014-12-18/lucio-fontana-and-his-friend-yves-klein-091716.php?uuid=ABNdlXSC" data-title="Lucio Fontana and his friend Yves Klein" class="segnalibro" href="javascript:void(0);"><span class="icon-star-empty"></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+
+                                                    </li>
+
+                                                    <li class="articolo">
+                                                        <div>
+                                                            <article class="">
+                                                                <div class="row">
+                                                                    <div class="span2">
+                                                                        <a class="thumbnail t_video" href="/art/real-estate/2015-01-13/milan-rises-ranking-of-favorite-cities-europe-for-real-estate-investors-183753.php?uuid=AB3aXCdC">
+                                                                            <img src="http://www.italy24.ilsole24ore.com/images2014/Editrice/ILSOLE24ORE/QUOTIDIANO_INSIDE_ITALY/2015/01/19/Quotidiano%20Inside%20Italy/ImmaginiWeb/Ritagli/GALLERIA_MILANO_TIPS-U102261346040p0B--258x258@Quotidiano_Inside_Italy-Web.jpg">
+
+
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="span6">
+                                                                        <header>
+                                                                            <h6 class="meta tas04">
+                                <a href="/home/Real-estate/">Real estate</a>
+                                                    <time datetime="2015-01-19">August 19, 2015</time>
+                        </h6>
+                                                                            <h3><a href="/art/real-estate/2015-01-13/milan-rises-ranking-of-favorite-cities-europe-for-real-estate-investors-183753.php?uuid=AB3aXCdC"><em>Milan</em> rises to 12th place in European ranking of cities offering the best non-residential opportunities</a></h3>
+                                                                            <p>
+                                                                                <small>by <span class="autore"> Paola Dezza</span></small>
+                                                                            </p>
+                                                                        </header>
+                                                                        <p>
+                                                                            <em>Milan</em> ranks among the cities in Europe offering the best investment opportunities, according to several Italian and international real estate operators who claim that <em>Milan</em> has the same potential as&nbsp;...</p>
+
+                                                                        <a data-uuid="AB3aXCdC" data-shorturl="/art/real-estate/2015-01-13/milan-rises-ranking-of-favorite-cities-europe-for-real-estate-investors-183753.php?uuid=AB3aXCdC" data-title="&lt;em&gt;Milan&lt;/em&gt; rises to 12th place in European ranking of cities offering the best non-residential opportunities" class="segnalibro" href="javascript:void(0);"><span class="icon-star-empty"></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+
+                                                    </li>
+
+                                                    <li class="articolo">
+                                                        <div>
+                                                            <article class="">
+                                                                <div class="row">
+                                                                    <div class="span2">
+                                                                        <a class="thumbnail t_video" href="/art/business-and-economy/2015-01-14/milan-the-bridge-towards-technologically-sophisticated-european-manufacturing-155749.php?uuid=AB2udsdC">
+                                                                            <img src="http://www.italy24.ilsole24ore.com/images2014/Editrice/ILSOLE24ORE/QUOTIDIANO_INSIDE_ITALY/2015/01/15/Quotidiano%20Inside%20Italy/ImmaginiWeb/Ritagli/INDUSTRIA_MARKA-U102268374545y2F--258x258@Quotidiano_Inside_Italy-Web.jpg">
+
+
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="span6">
+                                                                        <header>
+                                                                            <h6 class="meta tas02">
+                                <a href="/home/Business-and-economy/">Business and economy</a>
+                                                    <time datetime="2015-01-15">August 15, 2015</time>
+                        </h6>
+                                                                            <h3><a href="/art/business-and-economy/2015-01-14/milan-the-bridge-towards-technologically-sophisticated-european-manufacturing-155749.php?uuid=AB2udsdC">Manufacturing and knowledge economy behind <em>Milan</em>'s industrial appeal</a></h3>
+                                                                            <p>
+                                                                                <small>by <span class="autore">Paolo Bricco</span></small>
+                                                                            </p>
+                                                                        </header>
+                                                                        <p>In Germany, medium-tech makes up 8.2% of the total employment. For <em>Milan</em> and Lombardy, it is 7.7 %, half a point below the German figure, according to <em>Milan</em> business group Assolombarda. In Italy as a&nbsp;...</p>
+
+                                                                        <a data-uuid="AB2udsdC" data-shorturl="/art/business-and-economy/2015-01-14/milan-the-bridge-towards-technologically-sophisticated-european-manufacturing-155749.php?uuid=AB2udsdC" data-title="Manufacturing and knowledge economy behind &lt;em&gt;Milan&lt;/em&gt;'s industrial appeal" class="segnalibro" href="javascript:void(0);"><span class="icon-star-empty"></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+
+                                                    </li>
+
+                                                    <li class="articolo">
+                                                        <div>
+                                                            <article class="">
+                                                                <div class="row">
+                                                                    <div class="span8">
+                                                                        <header>
+                                                                            <h6 class="meta tas05">
+                                <a href="/panorama/Football-24/">Football 24</a>
+                                                    <time datetime="2014-12-16">August 16, 2014</time>
+                        </h6>
+                                                                            <h3><a href="/art/panorama/2014-12-15/ac-milan-prolongs-its-coalition-with-emirates-looking-at-the-new-stadium-202137.php?uuid=ABkaJ8QC">AC <em>Milan</em> prolongs its coalition with Emirates  looking at the new stadium</a></h3>
+                                                                            <p>
+                                                                                <small>by <span class="autore">Marco Bellinazzo</span></small>
+                                                                            </p>
+                                                                        </header>
+                                                                        <p>AC <em>Milan</em> and Emirates prolong their alliance (€18 million per year) as they look at the new stadium. <em>Milan</em> renews its partnership with Emirates until 2020, worth €100 million for the next 5 years.&nbsp;...</p>
+
+                                                                        <a data-uuid="ABkaJ8QC" data-shorturl="/art/panorama/2014-12-15/ac-milan-prolongs-its-coalition-with-emirates-looking-at-the-new-stadium-202137.php?uuid=ABkaJ8QC" data-title="AC &lt;em&gt;Milan&lt;/em&gt; prolongs its coalition with Emirates  looking at the new stadium" class="segnalibro" href="javascript:void(0);"><span class="icon-star-empty"></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+
+                                                    </li>
+
+                                                    <li class="articolo">
+                                                        <div>
+                                                            <article class="">
+                                                                <div class="row">
+                                                                    <div class="span8">
+                                                                        <header>
+                                                                            <h6 class="meta tas05">
+                                <a href="/panorama/Football-24/">Football 24</a>
+                                                    <time datetime="2015-01-22">August 22, 2015</time>
+                        </h6>
+                                                                            <h3><a href="/art/panorama/2015-01-21/the-crisis-of-ac-milan-and-the-return-of-the-former-coach-sacchi-184104.php?uuid=ABU23XhC">AC <em>Milan</em>'s crisis,  and the return of the former coach Sacchi</a></h3>
+                                                                            <p>
+                                                                                <small>by <span class="autore">Gianni Dragoni</span></small>
+                                                                            </p>
+                                                                        </header>
+                                                                        <p>AC <em>Milan</em> are in crisis, coming up short in terms of both sporting and financial results. Silvio Berlusconi's football club has just sold the team bus for €150,000. Currently even minor expenses are&nbsp;...</p>
+
+                                                                        <a data-uuid="ABU23XhC" data-shorturl="/art/panorama/2015-01-21/the-crisis-of-ac-milan-and-the-return-of-the-former-coach-sacchi-184104.php?uuid=ABU23XhC" data-title="AC &lt;em&gt;Milan&lt;/em&gt;'s crisis,  and the return of the former coach Sacchi" class="segnalibro" href="javascript:void(0);"><span class="icon-star-empty"></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+
+                                                    </li>
+
+                                                    <li class="charts">
+                                                        <div>
+                                                            <article class="">
+                                                                <div class="row">
+                                                                    <div class="span8">
+                                                                        <header>
+                                                                            <h6 class="meta tas03">
+                                <a href="/data/Markets/">Markets</a>
+                                                    <time datetime="2014-12-22">August 22, 2014</time>
+                        </h6>
+                                                                            <h3><a href="/art/markets/2014-12-15/milan-stock-market-listings-reached-26-2014-recovering-back-to-near-2007-record-113629.php?uuid=ABFTZqQC"><em>Milan</em> stock market listings reached 26 in 2014, recovering back to near 2007 record</a></h3>
+                                                                        </header>
+                                                                        <p>In recent years, the number of new listings on the <em>Milan</em> stock exchange was affected by the weak equity market. From a record 32 new listings in 2007, in 2008 - when global stock markets sank due&nbsp;...</p>
+
+                                                                        <a data-uuid="ABFTZqQC" data-shorturl="/art/markets/2014-12-15/milan-stock-market-listings-reached-26-2014-recovering-back-to-near-2007-record-113629.php?uuid=ABFTZqQC" data-title="&lt;em&gt;Milan&lt;/em&gt; stock market listings reached 26 in 2014, recovering back to near 2007 record" class="segnalibro" href="javascript:void(0);"><span class="icon-star-empty"></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+
+                                                    </li>
+
+                                                    <li class="articolo">
+                                                        <div>
+                                                            <article class="">
+                                                                <div class="row">
+                                                                    <div class="span8">
+                                                                        <header>
+                                                                            <h6 class="meta tas02">
+                                <a href="/home/Business-and-economy/">Business and economy</a>
+                                                    <time datetime="2014-12-04">August  4, 2014</time>
+                        </h6>
+                                                                            <h3><a href="/art/business-and-economy/2014-12-03/de-scal-the-family-owned-fur-business-aims-increasingly-for-luxury-193636.php?uuid=ABwZvdLC">De Scal, the family-owned fur business aims increasingly for luxury</a></h3>
+                                                                            <p>
+                                                                                <small>by <span class="autore">Paola Bottelli</span></small>
+                                                                            </p>
+                                                                        </header>
+                                                                        <p>Fine and even rare furs, like albino ermine, bought directly from the most prestigious farms of Northern Europe; processes designed in collaboration with the world’s leading Italian tanneries;&nbsp;...</p>
+
+                                                                        <a data-uuid="ABwZvdLC" data-shorturl="/art/business-and-economy/2014-12-03/de-scal-the-family-owned-fur-business-aims-increasingly-for-luxury-193636.php?uuid=ABwZvdLC" data-title="De Scal, the family-owned fur business aims increasingly for luxury" class="segnalibro" href="javascript:void(0);"><span class="icon-star-empty"></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+
+                                                    </li>
+
+                                                    <li class="articolo">
+                                                        <div>
+                                                            <article class="">
+                                                                <div class="row">
+                                                                    <div class="span2">
+                                                                        <a class="thumbnail t_video" href="/art/arts-and-leisure/2015-02-16/medardo-rosso-the-sculptor-and-magician-of-light-on-show-milan-113946.php?uuid=ABkEKQvC">
+                                                                            <img src="http://www.italy24.ilsole24ore.com/images2014/Editrice/ILSOLE24ORE/QUOTIDIANO_INSIDE_ITALY/2015/02/17/Quotidiano%20Inside%20Italy/ImmaginiWeb/Ritagli/home-U102530604841H6G--258x258@Quotidiano_Inside_Italy-Web.jpg">
+
+
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="span6">
+                                                                        <header>
+                                                                            <h6 class="meta tas08">
+                                <a href="/multimedia/Arts-and-Leisure/">Arts and Leisure</a>
+                                                    <time datetime="2015-02-18">February 18, 2015</time>
+                        </h6>
+                                                                            <h3><a href="/art/arts-and-leisure/2015-02-16/medardo-rosso-the-sculptor-and-magician-of-light-on-show-milan-113946.php?uuid=ABkEKQvC">Medardo Rosso, the sculptor and magician of light on show in <em>Milan</em></a></h3>
+                                                                            <p>
+                                                                                <small>by <span class="autore">Ada Masoero</span></small>
+                                                                            </p>
+                                                                        </header>
+                                                                        <p>
+                                                                            <em>Milan</em>’s Gallery of Modern Art hosts an exhibition on Medardo Rosso (1858-1928), the Turin-born sculptor whose works, dominated by light, gained recognition in Paris. The exhibition opens on&nbsp;...</p>
+
+                                                                        <a data-uuid="ABkEKQvC" data-shorturl="/art/arts-and-leisure/2015-02-16/medardo-rosso-the-sculptor-and-magician-of-light-on-show-milan-113946.php?uuid=ABkEKQvC" data-title="Medardo Rosso, the sculptor and magician of light on show in &lt;em&gt;Milan&lt;/em&gt;" class="segnalibro" href="javascript:void(0);"><span class="icon-star-empty"></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+
+                                                    </li>
+
+                                                    <li class="articolo">
+                                                        <div>
+                                                            <article class="">
+                                                                <div class="row">
+                                                                    <div class="span2">
+                                                                        <a class="thumbnail t_video" href="/art/business-and-economy/2014-09-09/milan-is-the-model-for-car-sharing-191432.php?uuid=ABGDv2rB">
+                                                                            <img src="http://www.italy24.ilsole24ore.com/images2014/Editrice/ILSOLE24ORE/QUOTIDIANO_INSIDE_ITALY/2014/09/10/Quotidiano%20Inside%20Italy/ImmaginiWeb/Ritagli/AUTO_ELETTRICA_Agf_529022-kRMD--258x258@Quotidiano_Inside_Italy-Web.jpg">
+
+
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="span6">
+                                                                        <header>
+                                                                            <h6 class="meta tas02">
+                                <a href="/home/Business-and-economy/">Business and economy</a>
+                                                    <time datetime="2014-10-02">October  2, 2014</time>
+                        </h6>
+                                                                            <h3><a href="/art/business-and-economy/2014-09-09/milan-is-the-model-for-car-sharing-191432.php?uuid=ABGDv2rB"><em>Milan</em> is the model for car sharing</a></h3>
+                                                                            <p>
+                                                                                <small>by <span class="autore">Giovanna Mancini</span></small>
+                                                                            </p>
+                                                                        </header>
+                                                                        <p>
+                                                                            <em>Milan</em> has embraced the idea of car-sharing so much that Car2Go, the first private operator of the service in the city, said it has reached its financial target ahead of time in its first year.&nbsp;...</p>
+
+                                                                        <a data-uuid="ABGDv2rB" data-shorturl="/art/business-and-economy/2014-09-09/milan-is-the-model-for-car-sharing-191432.php?uuid=ABGDv2rB" data-title="&lt;em&gt;Milan&lt;/em&gt; is the model for car sharing" class="segnalibro" href="javascript:void(0);"><span class="icon-star-empty"></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+
+                                                    </li>
+
+                                                    <li class="articolo">
+                                                        <div>
+                                                            <article class="">
+                                                                <div class="row">
+                                                                    <div class="span2">
+                                                                        <a class="thumbnail t_video" href="/art/arts-and-leisure/2015-03-04/milan-s-galleria-vittorio-emanuele-ii-gets-makeover-112552.php?uuid=AB7lRx3C">
+                                                                            <img src="http://www.italy24.ilsole24ore.com/images2014/Editrice/ILSOLE24ORE/QUOTIDIANO_INSIDE_ITALY/2015/03/05/Quotidiano%20Inside%20Italy/ImmaginiWeb/Ritagli/01-U102656709598JG--258x258@Quotidiano_Inside_Italy-Web.jpg">
+
+
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="span6">
+                                                                        <header>
+                                                                            <h6 class="meta tas08">
+                                <a href="/multimedia/Arts-and-Leisure/">Arts and Leisure</a>
+                                                    <time datetime="2015-03-05">March  5, 2015</time>
+                        </h6>
+                                                                            <h3><a href="/art/arts-and-leisure/2015-03-04/milan-s-galleria-vittorio-emanuele-ii-gets-makeover-112552.php?uuid=AB7lRx3C">Rival fashion houses join forces to give <em>Milan</em>'s Galleria Vittorio Emanuele II a makeover</a></h3>
+                                                                            <p>
+                                                                                <small>by <span class="autore">Marta Casadei</span></small>
+                                                                            </p>
+                                                                        </header>
+                                                                        <p>
+                                                                            <em>Milan</em>'s Galleria Vittorio Emanuele II gets a makeover. The revamping, conducted by a team of Italian restorers, is near completion and will end peremptorily in late March, after 35,000 hours of&nbsp;...</p>
+
+                                                                        <a data-uuid="AB7lRx3C" data-shorturl="/art/arts-and-leisure/2015-03-04/milan-s-galleria-vittorio-emanuele-ii-gets-makeover-112552.php?uuid=AB7lRx3C" data-title="Rival fashion houses join forces to give &lt;em&gt;Milan&lt;/em&gt;'s Galleria Vittorio Emanuele II a makeover" class="segnalibro" href="javascript:void(0);"><span class="icon-star-empty"></span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+
+                                                    </li>
+                                                </ol>
+
+                                            </pageinfo>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="span12">
+                                        <div class="text-center add-result">
+                                            <a href="#show-more" class="btn-qdf btn-qdf-m show-more-trigger">Show more <span class="icon-plus"></span></a>
+                                        </div>
+
+                                        <script type="text/javascript">
+                                            jQuery(function ($) {
+
+                                                var getPageInfo = function () {
+                                                    var currentPage = 0,
+                                                        lastPage = 0,
+                                                        pageinfo = $('pageinfo:last'),
+                                                        currentPage = parseInt(pageinfo.data('currentpage'), 10),
+                                                        lastPage = parseInt(pageinfo.data('lastpage'), 10),
+                                                        nextPage = currentPage + 1;
+
+                                                    return {
+                                                        'currentPage': currentPage,
+                                                        'nextPage': nextPage,
+                                                        'lastPage': lastPage
+                                                    }
+                                                }
+
+                                                $('.show-more-trigger').on('click', function (event) {
+                                                    event.preventDefault();
+
+                                                    var pageInfo = getPageInfo();
+
+                                                    if (pageInfo.currentPage >= pageInfo.lastPage) {
+                                                        return;
+                                                    }
+
+                                                    var trigger = $(this),
+                                                        url = 'http://www.italy24.ilsole24ore.com/art/lexicon/2014-08-12/milan-164305.php?uuid=ABUFigjB';
+
+                                                    url += (url.indexOf('?') > -1) ? '&' : '?';
+                                                    url += 'page=' + pageInfo.nextPage;
+
+                                                    $.ajax(url)
+                                                        .done(function (result) {
+                                                            $('ol.dayblock').last().after(result);
+
+                                                            // remove duplicated dayheader
+                                                            var seen = {};
+                                                            $('h5.dayheader').each(function () {
+                                                                var $this = $(this),
+                                                                    txt = $this.text();
+
+                                                                if (seen[txt]) {
+                                                                    $this.remove();
+                                                                } else {
+                                                                    seen[txt] = true;
+                                                                }
+                                                            });
+
+                                                            $(document.body).trigger('sticky_kit:recalc');
+
+                                                            if (pageInfo.nextPage >= pageInfo.lastPage) {
+                                                                trigger.hide();
+                                                            } else {
+                                                                trigger.blur();
+                                                            }
+                                                        });
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="separator"></span>
+
+
+
+                            <!--    INDEX  -->
+
+                            <div class="row">
+                                <div class="span12">
+                                    <div class="nav-letter">
+                                        <h1>— Index <small>Find a subject in albhabetic order</small></h1>
+                                        <nav>
+                                            <ol class="nav">
+                                                <li><a class="" href="#section-A" data-toggle="collapse" aria-expanded="false" aria-controls="section-A"> A</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-B">B</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-C">C</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-D">D</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-E">E</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-F">F</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-G">G</a>
+                                                </li>
+                                                <li><span>H</span>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-I">I</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-J">J</a>
+                                                </li>
+                                                <li><span>K</span>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-L">L</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-M">M</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-N">N</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-O">O</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-P">P</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-Q">Q</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-R">R</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-S">S</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-T">T</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-U">U</a>
+                                                </li>
+                                                <li><a class="js-scroll-to-letter" href="#letter-V">V</a>
+                                                </li>
+                                                <li><span>W</span>
+                                                </li>
+                                                <li><span>X</span>
+                                                </li>
+                                                <li><span>Y</span>
+                                                </li>
+                                                <li><span>Z</span>
+                                                </li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="separator"></span>
+
+                            <div class="o-list letter-list">
+                                <ol>
+                                    <li>
+                                        <section id="section-A" class="section-list letter collapse">
+                                            <h1 id="letter-A"><span class="t_wrap">A</span></h1>
+                                            <div class="row-elements">
+                                                <div class="element">
+                                                    <div class="panel-group" id="">
+                                                        <div class="panel panel-primary">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title collapser">
+
+                                                                                            <a class="icon-caret-down accordion-toggle lexiconpage" data-uuid="ABRfK17B" data-toggle="collapse" data-parent="#accordion" data-content="#pannello-A1" href="#pannello-A1">
+                                                                                            ADR
+                                                                                            </a>
+                                                                                        </h4>
+                                                            </div>
+                                                            <div id="pannello-A1" class="panel-collapse collapse" style="height: 0px;">
+                                                                <div class="panel-body"></div>
+                                                                <p class="text-right">
+                                                                    <a href="/art/lexicon/2014-10-29/adr-135302.php?uuid=ABRfK17B">Go to the complete definition</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="element">
+                                                    <div class="panel-group" id="">
+                                                        <div class="panel panel-primary">
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title collapser">
+                                                                    <a class="icon-caret-down accordion-toggle lexiconpage" data-uuid="ABSeOJbB" data-toggle="collapse" data-parent="#accordion" data-content="#pannello-A2" href="#pannello-A2">
+                                                                      AGCOM
+                                                                    </a>
+                                                            </h4>
+                                                            </div>
+                                                            <div id="pannello-A2" class="panel-collapse collapse" style="height: 0px;">
+                                                                <div class="panel-body"></div>
+                                                                <p class="text-right">
+                                                                    <a href="/art/lexicon/2014-07-16/agcom-144933.php?uuid=ABSeOJbB">Go to the complete definition</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                        
+            
+            <!-- Footer
+        ================================================== -->
+
+            <footer id="footer">
+                <div class="container">
+                    <a class="sole-logo" href="#">
+                        <img class="retina" src="./img/il_sole_24_ore_white.png" alt="Il Sole 24 ore" />
+                    </a>
+                    <ul>
+                        <li><a href="#">About us</a>
+                        </li>
+                        <li><a href="mailto:xxxitaly24@ilsole24ore.com">Contact us</a>
+                        </li>
+                        <li><a href="mailto:xxxitaly24@ilsole24ore.com">Subscribe</a>
+                        </li>
+                        <li><a href="./suggestions.html">Suggestions</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+
+
+        </div>
+    </div>
+
+
+    <!-- Modal popup
+    ================================================== -->
+    <div id="bg-modal"></div>
+    <div id="popup-date">
+        <div class="popup-wrapper">
+            <h5>Time Machine <span data-modal="popup-date" class="icon-remove"></span></h5>
+
+            <div class="scegli">
+                <h6><a class="current" href="">Week <span class="icon-chevron-right"></span></a></h6>
+            </div>
+
+            <div class="scegli">
+                <h6><a class="" href="">Month <span class="icon-chevron-right"></span></a></h6>
+            </div>
+
+            <h6>Customize</h6>
+            <menu id="filtro-date">
+                <li>
+                    <label for="dal">From</label>
+                    <input id="dal" type="text">
+                    <span id="dal-icon" class="icon-calendar"></span>
+                </li>
+                <li>
+                    <label for="al">To</label>
+                    <input id="al" type="text">
+                    <span id="al-icon" class="icon-calendar"></span>
+                </li>
+                <li class="last">
+                    <button data-modal="popup-date" id="filtra" type="button">FILTER</button>
+
+                </li>
+            </menu>
+        </div>
+    </div>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <script type="text/javascript" src="./js/jquery.placeholder-min.js"></script>
+    <script type="text/javascript" src="./js/jquery.sticky-kit.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui-1.10.3.datepicker.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-transition.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-collapse.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript" src="./js/retina-min.js"></script>
+    <script type="text/javascript" src="./js/readmore.min.js"></script>
+
+    <script type="text/javascript" src="./js/bootstrap-tooltip.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-popover.js"></script>
+
+    <script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.carouFredSel-6.2.1-packed-min.js"></script>
+
+    <script type="text/javascript" src="./js/jquery.ready-min.js"></script>
+    <!-- Qui il JS con elenco TAG -->
+    <script type="text/javascript" src="./storage/tag_list.js"></script>
+
+
+    <!-- Analytics
+    ================================================== -->
+
+
+    <!-- Mapbox.js
+    ================================================== -->
+
+    <script src='./data/compress/regions.json'></script>
+    
+    <script>
+        L.mapbox.accessToken = 'pk.eyJ1IjoidHJhYnVjY29jYW1wb3MiLCJhIjoiTkN5WUlfWSJ9.58ow8y8xAzmtXDrCHATSDw';
+        var map = L.mapbox.map('map', 'trabuccocampos.4dae7036', {
+            minZoom: 6,
+            maxZoom: 13,
+            zoomControl: false,
+            legendControl: {
+                // Any of the valid control positions:
+                // https://www.mapbox.com/mapbox.js/api/v2.1.5/l-control/#control-positions
+                position: 'topright'
+            }
+        })
+            .setView([45.4667, 9.1833], 13)
+            .addControl(L.mapbox.geocoderControl('mapbox.places', {
+                autocomplete: true,
+                keepOpen: true
+            }));
+        
+        new L.Control.Zoom({ position: 'topright' }).addTo(map);
+        
+        var marker = L.mapbox.featureLayer({
+            // this feature is in the GeoJSON format: see geojson.org
+            // for the full specification
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                // coordinates here are in longitude, latitude order because
+                // x, y is the standard for GeoJSON and many formats
+                coordinates: [
+                  9.1833,
+                  45.4667 
+                ]
+            },
+            properties: {
+                title: 'Milan',
+                description: 'Lombardy',
+                // one can customize markers by adding simplestyle properties
+                // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+                'marker-size': 'large',
+                'marker-color': '#234357',
+                'marker-symbol': 'circle'
+            }
+        }).addTo(map);
+        
+        var popup = new L.Popup({ autoPan: false });
+        
+        // label layer
+        var labels = L.mapbox.tileLayer('trabuccocampos.2e1bec86').addTo(map);
+        
+        
+        
+        /***************
+            REGIONI
+        ****************/
+        function getStyle(feature) {
+          return {
+              weight: 2,
+              opacity: 1,
+              color: '#333',
+              fillOpacity: 1,
+              fillColor: '#333'
+          };
+        };
+        
+        // regionsIT
+        var regions = L.mapbox.tileLayer('trabuccocampos.30929520').addTo(map);
+        
+        // the function given to this callback will be called every time the map
+        // completes a zoom animation.
+        regions.on('zoomend', function() {
+            // here's where you decided what zoom levels the layer should and should
+            // not be available for: use javascript comparisons like < and > if
+            // you want something other than just one zoom level, like
+            // (map.getZoom > 10)
+            if (map.getZoom < 9) {
+                // setFilter is available on L.mapbox.featureLayers only. Here
+                // we're hiding and showing the default marker layer that's attached
+                // to the map - change the reference if you want to hide or show a
+                // different featureLayer.
+                // If you want to hide or show a different kind of layer, you can use
+                // similar methods like .setOpacity(0) and .setOpacity(1)
+                // to hide or show it.
+                map.featureLayer.setFilter(function() { return true; });
+            } else {
+                map.featureLayer.setFilter(function() { return false; });
+            }
+        });
+        
+        
+        
+    </script>
+</body>
+
+</html>
