@@ -24,7 +24,7 @@
         
     
     <!-- aatc  -->
-    <link rel="stylesheet" type="text/css" href="./css/lexicon.css" />
+    <link rel="stylesheet" type="text/css" href="./css/lexicon_v6.css" />
     
 
     <!--    Mapbox.js -->
@@ -616,7 +616,74 @@
                             <!-- MAPBOX -->
                             <div class="row">
                                 <div class="span12">
-                                    <div class="mapbox" id="map"></div>
+                                    <div class="where">
+
+                                    <!-- MAPBOX -->
+                                    <div class="mapbox qdv-popup" id="map"></div>
+
+                                    <div class="map-overlay">
+                                        <h6 class="meta tas03">
+                                            <a href="/lexicon">Lexicon</a>
+                                            &nbsp;›&nbsp;
+                                            <a href="/lexicon/where">Where</a>
+                                        </h6>
+                                        <header class="detour-24">
+                                            <h6 class="meta tas04">
+                                                <a href="/panorama/Detour-24/">Detour 24</a>
+                                                    <time datetime="2015-02-02">August 18, 2015</time>
+                                            </h6>
+                                            <h3><a href="/art/arts-and-leisure/2015-01-27/-detour-napoli-155744.php?uuid=ABzZdqkC">NAPLES, where every slice of history adds to the beauty of one of Italy's most charming cities</a></h3>
+                                            <p>
+                                                <small>by <span class="autore">Carmine Fotina</span></small>
+                                            </p>
+                                        </header>
+                                        <header class="detour-24">
+                                            <h6 class="meta tas04">
+                                                <a href="/panorama/Detour-24/">Detour 24</a>
+                                                    <time datetime="2015-02-02">July 2, 2015</time>
+                                            </h6>
+                                            <h3><a href="/art/arts-and-leisure/2015-01-27/-detour-napoli-155744.php?uuid=ABzZdqkC">MILAN Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></h3>
+                                            <p>
+                                                <small>by <span class="autore">Carmine Fotina</span></small>
+                                            </p>
+                                        </header>
+                                        <header class="detour-24">
+                                            <h6 class="meta tas04">
+                                                <a href="/panorama/Detour-24/">Detour 24</a>
+                                                    <time datetime="2015-02-02">June 25, 2015</time>
+                                            </h6>
+                                            <h3><a href="/art/arts-and-leisure/2015-01-27/-detour-napoli-155744.php?uuid=ABzZdqkC">BARI sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></h3>
+                                            <p>
+                                                <small>by <span class="autore">Carmine Fotina</span></small>
+                                            </p>
+                                        </header>
+                                        <header class="detour-24">
+                                            <h6 class="meta tas04">
+                                                <a href="/panorama/Detour-24/">Detour 24</a>
+                                                    <time datetime="2015-02-02">June 3, 2015</time>
+                                            </h6>
+                                            <h3><a href="/art/arts-and-leisure/2015-01-27/-detour-napoli-155744.php?uuid=ABzZdqkC">FLORENCE enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</a></h3>
+                                            <p>
+                                                <small>by <span class="autore">Carmine Fotina</span></small>
+                                            </p>
+                                        </header>
+                                        <header class="detour-24">
+                                            <h6 class="meta tas04">
+                                                <a href="/panorama/Detour-24/">Detour 24</a>
+                                                    <time datetime="2015-02-02">May 5, 2015</time>
+                                            </h6>
+                                            <h3><a href="/art/arts-and-leisure/2015-01-27/-detour-napoli-155744.php?uuid=ABzZdqkC">ROME porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</a></h3>
+                                            <p>
+                                                <small>by <span class="autore">Carmine Fotina</span></small>
+                                            </p>
+                                        </header>
+                                        </div>
+
+                                        <div class="map-overlay-scroll">
+                                            <span class="icon-caret-down"></span>
+                                        </div>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -718,41 +785,85 @@
     ================================================== -->
 
         <script>
-            L.mapbox.accessToken = 'pk.eyJ1IjoidHJhYnVjY29jYW1wb3MiLCJhIjoiTkN5WUlfWSJ9.58ow8y8xAzmtXDrCHATSDw';
-            var map = L.mapbox.map('map', 'trabuccocampos.4dae7036,trabuccocampos.4ca6fcc6')
-                .setView([42, 12], 6);            
-            
-//            var featureLayer = L.mapbox.featureLayer('data/it_prov_geo.json').addTo(map);
-//
-//            function getColor(d) {
-//                return d > 420  ? '#800026' :
-//                       d > 435  ? '#BD0026' :
-//                       d > 450  ? '#E31A1C' :
-//                       d > 465  ? '#FC4E2A' :
-//                       d > 480  ? '#f5a335' :
-//                       d > 495  ? '#ffc038' :
-//                       d > 510  ? '#fddf64' :
-//                       d > 525  ? '#a0fa92' :
-//                       d > 540  ? '#4cc45c' :
-//                       d > 555  ? '#239a4b' :
-//                       d > 570  ? '#066c3a' :
-//                                  '#0a513e';
-//            }
-//            
-//            
-//            function style(feature) {
-//                return {
-//                    fillColor: getColor(feature.properties.punti),
-//                    weight: 2,
-//                    opacity: 1,
-//                    color: 'white',
-//                    dashArray: '3',
-//                    fillOpacity: 0.7
-//                };
-//            }
-//
-//            L.geoJson(featureLayer, {style: style}).addTo(map);
-        </script>
+        L.mapbox.accessToken = 'pk.eyJ1IjoidHJhYnVjY29jYW1wb3MiLCJhIjoiTkN5WUlfWSJ9.58ow8y8xAzmtXDrCHATSDw';
+        var map = L.mapbox.map('map', 'trabuccocampos.4dae7036', {
+            minZoom: 6,
+            maxZoom: 13,
+            zoomControl: false,
+            legendControl: {
+                // Any of the valid control positions:
+                // https://www.mapbox.com/mapbox.js/api/v2.1.5/l-control/#control-positions
+                position: 'topright'
+            }
+        })
+            .setView([42, 12.5], 6)
+            .addControl(L.mapbox.geocoderControl('mapbox.places', {
+                autocomplete: true,
+                keepOpen: true
+            }));
+        
+        new L.Control.Zoom({ position: 'topright' }).addTo(map);
+        
+        var marker = L.mapbox.featureLayer({
+            // this feature is in the GeoJSON format: see geojson.org
+            // for the full specification
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                // coordinates here are in longitude, latitude order because
+                // x, y is the standard for GeoJSON and many formats
+                coordinates: [
+                  9.1833,
+                  45.4667 
+                ]
+            },
+            properties: {
+                title: 'Milan',
+                description: 'Lombardy',
+                // one can customize markers by adding simplestyle properties
+                // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+                'marker-size': 'large',
+                'marker-color': '#234357',
+                'marker-symbol': 'circle'
+            }
+        }).addTo(map);
+        
+        var popup = new L.Popup({ autoPan: false });
+        
+        // label layer
+        var labels = L.mapbox.tileLayer('trabuccocampos.2e1bec86').addTo(map);
+        
+        
+        
+        /***************
+            REGIONI
+        ****************/
+        
+        // regionsIT
+        var regions = L.mapbox.tileLayer('trabuccocampos.30929520').addTo(map);
+        
+        // the function given to this callback will be called every time the map
+        // completes a zoom animation.
+        regions.on('zoomend', function() {
+            // here's where you decided what zoom levels the layer should and should
+            // not be available for: use javascript comparisons like < and > if
+            // you want something other than just one zoom level, like
+            // (map.getZoom > 10)
+            if (map.getZoom > 7) {
+                // setFilter is available on L.mapbox.featureLayers only. Here
+                // we're hiding and showing the default marker layer that's attached
+                // to the map - change the reference if you want to hide or show a
+                // different featureLayer.
+                // If you want to hide or show a different kind of layer, you can use
+                // similar methods like .setOpacity(0) and .setOpacity(1)
+                // to hide or show it.
+                map.featureLayer.setOpacity(0);
+            } else {
+                map.featureLayer.setOpacity(1);
+            }
+        });        
+        
+    </script>
 
 
 
